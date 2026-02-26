@@ -1,43 +1,102 @@
-{/* Project 1 */}
-<div style={cardStyle}>
+<div style={{
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+  gap: "20px",
+  marginTop: "20px"
+}}>
 
-  <h3>AI Career Advisor (Generative AI, Live Deployment)</h3>
+  {/* Project 1 — AI Career Advisor */}
+  <div style={cardStyle}>
 
-  <p style={descStyle}>
-    AI-powered career advisor built using Python and Streamlit. Integrated LLM via API to generate real-time career recommendations and learning roadmaps. Deployed on Streamlit Cloud with secure API handling.
-  </p>
+    <h3>AI Career Advisor (Generative AI, Live Deployment)</h3>
 
-  <div>
-    <span style={tagStyle}>Python</span>
-    <span style={tagStyle}>Streamlit</span>
-    <span style={tagStyle}>Generative AI</span>
-    <span style={tagStyle}>LLM API</span>
-    <span style={tagStyle}>Deployment</span>
+    <p style={descStyle}>
+      AI-powered career advisor built using Python and Streamlit. Integrated LLM via API to generate real-time career recommendations and learning roadmaps. Deployed on Streamlit Cloud with secure API handling.
+    </p>
+
+    <div>
+      <span style={tagStyle}>Python</span>
+      <span style={tagStyle}>Streamlit</span>
+      <span style={tagStyle}>Generative AI</span>
+      <span style={tagStyle}>LLM API</span>
+      <span style={tagStyle}>Deployment</span>
+    </div>
+
+    <div style={{ marginTop: "15px", display: "flex", gap: "10px" }}>
+
+      <a
+        href="https://github.com/Abhijith1729/ai-career-advisor"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button style={buttonStyle}>View Code</button>
+      </a>
+
+      <a
+        href="https://ai-career-advisor-g3g6ua83aufmpo8mnzjmcn.streamlit.app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button style={{
+          ...buttonStyle,
+          backgroundColor: "#16a34a"
+        }}>
+          Live Demo
+        </button>
+      </a>
+
+    </div>
+
   </div>
 
-  <div style={{ marginTop: "15px", display: "flex", gap: "10px" }}>
 
-    <a
-      href="https://github.com/Abhijith1729/ai-career-advisor"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button style={buttonStyle}>View Code</button>
-    </a>
+  {/* Project 2 — Cardiovascular */}
+  <div style={cardStyle}>
+    <h3>Cardiovascular Disease Prediction System</h3>
+    <p style={descStyle}>
+      Machine learning system that predicts cardiovascular disease using ECG data and ensemble models.
+    </p>
+    <div>
+      <span style={tagStyle}>Python</span>
+      <span style={tagStyle}>Machine Learning</span>
+      <span style={tagStyle}>Scikit-learn</span>
+      <span style={tagStyle}>Streamlit</span>
+      <span style={tagStyle}>Pandas</span>
+    </div>
 
-    <a
-      href="https://ai-career-advisor-g3g6ua83aufmpo8mnzjmcn.streamlit.app"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button style={{
-        ...buttonStyle,
-        backgroundColor: "#16a34a"
-      }}>
-        Live Demo
-      </button>
-    </a>
+    <div style={{ marginTop: "15px" }}>
+      <a
+        href="https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button style={buttonStyle}>View Code</button>
+      </a>
+    </div>
+  </div>
 
+
+  {/* Project 3 — Calculator */}
+  <div style={cardStyle}>
+    <h3>Modern Calculator (JavaScript)</h3>
+    <p style={descStyle}>
+      Responsive calculator built using HTML, CSS, and JavaScript with modern UI and interactive features.
+    </p>
+    <div>
+      <span style={tagStyle}>HTML</span>
+      <span style={tagStyle}>CSS</span>
+      <span style={tagStyle}>JavaScript</span>
+    </div>
+
+    <div style={{ marginTop: "15px" }}>
+      <a
+        href="https://github.com/Abhijith1729/modern-calculator-js"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button style={buttonStyle}>View Code</button>
+      </a>
+    </div>
   </div>
 
 </div>
