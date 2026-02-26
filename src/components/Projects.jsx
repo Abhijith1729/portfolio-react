@@ -12,84 +12,83 @@ function Projects() {
       }}>
 
         {/* Project 1 */}
-        <div style={{
-          backgroundColor: "#1e293b",
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: "0 0 10px rgba(0,0,0,0.3)"
-        }}>
+        <div style={cardStyle}>
 
-          <h3>
-            Cardiovascular Disease Prediction System
-          </h3>
+          <h3>AI Career Advisor using Generative AI</h3>
 
-          <p style={{ marginTop: "10px", color: "#cbd5e1" }}>
-            Machine learning system that predicts cardiovascular disease using ECG data and ensemble models.
+          <p style={descStyle}>
+            AI-powered career advisor built using Python and Streamlit. Integrated Gemma LLM via Ollama to generate role recommendations and roadmaps.
           </p>
 
-          {/* Tech Stack */}
-          <div style={{ marginTop: "10px" }}>
+          <div>
             <span style={tagStyle}>Python</span>
-            <span style={tagStyle}>Machine Learning</span>
-            <span style={tagStyle}>Scikit-learn</span>
-            <span style={tagStyle}>StreamLit</span>
-            <span style={tagStyle}>Pandas</span>
+            <span style={tagStyle}>Streamlit</span>
+            <span style={tagStyle}>Ollama</span>
+            <span style={tagStyle}>LLM</span>
           </div>
 
-          {/* Buttons */}
           <div style={{ marginTop: "15px" }}>
-
             <a
-              href="https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques"
+              href="https://github.com/Abhijith1729/ai-career-advisor"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button style={buttonStyle}>
-                View Code
-              </button>
+              <button style={buttonStyle}>View Code</button>
             </a>
-
           </div>
 
         </div>
 
 
         {/* Project 2 */}
-        <div style={{
-          backgroundColor: "#1e293b",
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: "0 0 10px rgba(0,0,0,0.3)"
-        }}>
+        <div style={cardStyle}>
 
-          <h3>
-            Modern Calculator (JavaScript)
-          </h3>
+          <h3>Cardiovascular Disease Prediction System (Team Project)</h3>
 
-          <p style={{ marginTop: "10px", color: "#cbd5e1" }}>
-            Responsive calculator built using HTML, CSS, and JavaScript with modern UI and interactive features.
+          <p style={descStyle}>
+            Developed Streamlit frontend and integrated it with ML backend for real-time cardiovascular prediction and visualization.
           </p>
 
-          {/* Tech Stack */}
-          <div style={{ marginTop: "10px" }}>
-            <span style={tagStyle}>HTML</span>
-            <span style={tagStyle}>CSS</span>
-            <span style={tagStyle}>JavaScript</span>
+          <div>
+            <span style={tagStyle}>Python</span>
+            <span style={tagStyle}>Streamlit</span>
+            <span style={tagStyle}>Frontend</span>
+            <span style={tagStyle}>API Integration</span>
           </div>
 
-          {/* Buttons */}
           <div style={{ marginTop: "15px" }}>
-
             <a
-              href="https://github.com/Abhijith1729/modern-calculator-js"
+              href="https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button style={buttonStyle}>
-                View Code
-              </button>
+              <button style={buttonStyle}>View Code</button>
             </a>
+          </div>
 
+        </div>
+
+
+        {/* Project 3 */}
+        <div style={cardStyle}>
+
+          <h3>Job Application Tracker</h3>
+
+          <p style={descStyle}>
+            Job tracking system built using Python, Streamlit, and SQLite with database integration and CRUD operations.
+          </p>
+
+          <div>
+            <span style={tagStyle}>Python</span>
+            <span style={tagStyle}>SQL</span>
+            <span style={tagStyle}>SQLite</span>
+            <span style={tagStyle}>Streamlit</span>
+          </div>
+
+          <div style={{ marginTop: "15px" }}>
+            <button style={buttonStyle}>
+              In Progress
+            </button>
           </div>
 
         </div>
@@ -98,6 +97,23 @@ function Projects() {
 
     </section>
   )
+}
+
+
+/* Card Style */
+const cardStyle = {
+  backgroundColor: "#1e293b",
+  padding: "20px",
+  borderRadius: "10px",
+  boxShadow: "0 0 10px rgba(0,0,0,0.3)"
+}
+
+
+/* Description Style */
+const descStyle = {
+  marginTop: "10px",
+  color: "#cbd5e1",
+  lineHeight: "1.5"
 }
 
 
