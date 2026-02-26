@@ -17,7 +17,7 @@ function Projects() {
           <h3>AI Career Advisor (Generative AI, Live Deployment)</h3>
 
           <p style={descStyle}>
-            AI-powered career advisor built using Python and Streamlit. Integrated LLM via API to generate real-time career recommendations and learning roadmaps. Deployed on Streamlit Cloud with secure API handling.
+            AI-powered career advisor built using Python and Streamlit. Integrated LLM API to generate real-time career recommendations and learning roadmaps. Deployed on Streamlit Cloud with secure API handling.
           </p>
 
           <div>
@@ -35,9 +35,7 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button style={buttonStyle}>
-                View Code
-              </button>
+              <button style={buttonStyle}>View Code</button>
             </a>
 
             <a
@@ -64,7 +62,7 @@ function Projects() {
           <h3>Cardiovascular Disease Prediction System</h3>
 
           <p style={descStyle}>
-            Machine learning system that predicts cardiovascular disease using ECG data and ensemble models. Built interactive Streamlit UI and integrated trained ML model for real-time prediction.
+            Machine learning system that predicts cardiovascular disease using ECG data and ensemble models.
           </p>
 
           <div>
@@ -81,9 +79,7 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button style={buttonStyle}>
-                View Code
-              </button>
+              <button style={buttonStyle}>View Code</button>
             </a>
           </div>
 
@@ -96,7 +92,7 @@ function Projects() {
           <h3>Modern Calculator (JavaScript)</h3>
 
           <p style={descStyle}>
-            Responsive calculator built using HTML, CSS, and JavaScript with modern UI, clean design, and interactive functionality.
+            Responsive calculator built using HTML, CSS, and JavaScript with modern UI and interactive features.
           </p>
 
           <div>
@@ -111,14 +107,11 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button style={buttonStyle}>
-                View Code
-              </button>
+              <button style={buttonStyle}>View Code</button>
             </a>
           </div>
 
         </div>
-
 
       </div>
 
@@ -167,4 +160,4 @@ const buttonStyle = {
 }
 
 
-export default Projects;
+export default Projects
