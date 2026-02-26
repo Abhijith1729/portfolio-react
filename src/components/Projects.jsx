@@ -11,19 +11,18 @@ function Projects() {
         marginTop: "20px"
       }}>
 
-        {/* Project 1 — AI Career Advisor */}
+        {/* Project 1 */}
         <div style={cardStyle}>
 
-          <h3>AI Career Advisor (Generative AI, Live Deployment)</h3>
+          <h3>AI Career Advisor</h3>
 
           <p style={descStyle}>
-            AI-powered career advisor built using Python and Streamlit. Integrated LLM API to generate real-time career recommendations and learning roadmaps. Deployed on Streamlit Cloud with secure API handling.
+            Generative AI web app that recommends career roles and learning roadmaps based on user skills. Integrated LLM API and deployed on Streamlit Cloud.
           </p>
 
           <div>
             <span style={tagStyle}>Python</span>
             <span style={tagStyle}>Streamlit</span>
-            <span style={tagStyle}>Generative AI</span>
             <span style={tagStyle}>LLM API</span>
             <span style={tagStyle}>Deployment</span>
           </div>
@@ -56,13 +55,13 @@ function Projects() {
         </div>
 
 
-        {/* Project 2 — Cardiovascular */}
+        {/* Project 2 */}
         <div style={cardStyle}>
 
           <h3>Cardiovascular Disease Prediction System</h3>
 
           <p style={descStyle}>
-            Machine learning system that predicts cardiovascular disease using ECG data and ensemble models.
+            Machine learning application that predicts cardiovascular disease using ensemble models with an interactive Streamlit interface.
           </p>
 
           <div>
@@ -70,7 +69,6 @@ function Projects() {
             <span style={tagStyle}>Machine Learning</span>
             <span style={tagStyle}>Scikit-learn</span>
             <span style={tagStyle}>Streamlit</span>
-            <span style={tagStyle}>Pandas</span>
           </div>
 
           <div style={{ marginTop: "15px" }}>
@@ -86,13 +84,13 @@ function Projects() {
         </div>
 
 
-        {/* Project 3 — Calculator */}
+        {/* Project 3 */}
         <div style={cardStyle}>
 
-          <h3>Modern Calculator (JavaScript)</h3>
+          <h3>Modern Calculator</h3>
 
           <p style={descStyle}>
-            Responsive calculator built using HTML, CSS, and JavaScript with modern UI and interactive features.
+            Responsive calculator built with JavaScript featuring clean UI and real-time calculations.
           </p>
 
           <div>
