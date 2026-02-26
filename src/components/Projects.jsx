@@ -1,102 +1,170 @@
-<div style={{
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-  gap: "20px",
-  marginTop: "20px"
-}}>
+function Projects() {
+  return (
+    <section id="projects" className="container">
 
-  {/* Project 1 — AI Career Advisor */}
-  <div style={cardStyle}>
+      <h2>Projects</h2>
 
-    <h3>AI Career Advisor (Generative AI, Live Deployment)</h3>
+      <div style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+        gap: "20px",
+        marginTop: "20px"
+      }}>
 
-    <p style={descStyle}>
-      AI-powered career advisor built using Python and Streamlit. Integrated LLM via API to generate real-time career recommendations and learning roadmaps. Deployed on Streamlit Cloud with secure API handling.
-    </p>
+        {/* Project 1 — AI Career Advisor */}
+        <div style={cardStyle}>
 
-    <div>
-      <span style={tagStyle}>Python</span>
-      <span style={tagStyle}>Streamlit</span>
-      <span style={tagStyle}>Generative AI</span>
-      <span style={tagStyle}>LLM API</span>
-      <span style={tagStyle}>Deployment</span>
-    </div>
+          <h3>AI Career Advisor (Generative AI, Live Deployment)</h3>
 
-    <div style={{ marginTop: "15px", display: "flex", gap: "10px" }}>
+          <p style={descStyle}>
+            AI-powered career advisor built using Python and Streamlit. Integrated LLM via API to generate real-time career recommendations and learning roadmaps. Deployed on Streamlit Cloud with secure API handling.
+          </p>
 
-      <a
-        href="https://github.com/Abhijith1729/ai-career-advisor"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button style={buttonStyle}>View Code</button>
-      </a>
+          <div>
+            <span style={tagStyle}>Python</span>
+            <span style={tagStyle}>Streamlit</span>
+            <span style={tagStyle}>Generative AI</span>
+            <span style={tagStyle}>LLM API</span>
+            <span style={tagStyle}>Deployment</span>
+          </div>
 
-      <a
-        href="https://ai-career-advisor-g3g6ua83aufmpo8mnzjmcn.streamlit.app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button style={{
-          ...buttonStyle,
-          backgroundColor: "#16a34a"
-        }}>
-          Live Demo
-        </button>
-      </a>
+          <div style={{ marginTop: "15px", display: "flex", gap: "10px" }}>
 
-    </div>
+            <a
+              href="https://github.com/Abhijith1729/ai-career-advisor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button style={buttonStyle}>
+                View Code
+              </button>
+            </a>
 
-  </div>
+            <a
+              href="https://ai-career-advisor-g3g6ua83aufmpo8mnzjmcn.streamlit.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button style={{
+                ...buttonStyle,
+                backgroundColor: "#16a34a"
+              }}>
+                Live Demo
+              </button>
+            </a>
 
+          </div>
 
-  {/* Project 2 — Cardiovascular */}
-  <div style={cardStyle}>
-    <h3>Cardiovascular Disease Prediction System</h3>
-    <p style={descStyle}>
-      Machine learning system that predicts cardiovascular disease using ECG data and ensemble models.
-    </p>
-    <div>
-      <span style={tagStyle}>Python</span>
-      <span style={tagStyle}>Machine Learning</span>
-      <span style={tagStyle}>Scikit-learn</span>
-      <span style={tagStyle}>Streamlit</span>
-      <span style={tagStyle}>Pandas</span>
-    </div>
-
-    <div style={{ marginTop: "15px" }}>
-      <a
-        href="https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button style={buttonStyle}>View Code</button>
-      </a>
-    </div>
-  </div>
+        </div>
 
 
-  {/* Project 3 — Calculator */}
-  <div style={cardStyle}>
-    <h3>Modern Calculator (JavaScript)</h3>
-    <p style={descStyle}>
-      Responsive calculator built using HTML, CSS, and JavaScript with modern UI and interactive features.
-    </p>
-    <div>
-      <span style={tagStyle}>HTML</span>
-      <span style={tagStyle}>CSS</span>
-      <span style={tagStyle}>JavaScript</span>
-    </div>
+        {/* Project 2 — Cardiovascular */}
+        <div style={cardStyle}>
 
-    <div style={{ marginTop: "15px" }}>
-      <a
-        href="https://github.com/Abhijith1729/modern-calculator-js"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button style={buttonStyle}>View Code</button>
-      </a>
-    </div>
-  </div>
+          <h3>Cardiovascular Disease Prediction System</h3>
 
-</div>
+          <p style={descStyle}>
+            Machine learning system that predicts cardiovascular disease using ECG data and ensemble models. Built interactive Streamlit UI and integrated trained ML model for real-time prediction.
+          </p>
+
+          <div>
+            <span style={tagStyle}>Python</span>
+            <span style={tagStyle}>Machine Learning</span>
+            <span style={tagStyle}>Scikit-learn</span>
+            <span style={tagStyle}>Streamlit</span>
+            <span style={tagStyle}>Pandas</span>
+          </div>
+
+          <div style={{ marginTop: "15px" }}>
+            <a
+              href="https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button style={buttonStyle}>
+                View Code
+              </button>
+            </a>
+          </div>
+
+        </div>
+
+
+        {/* Project 3 — Calculator */}
+        <div style={cardStyle}>
+
+          <h3>Modern Calculator (JavaScript)</h3>
+
+          <p style={descStyle}>
+            Responsive calculator built using HTML, CSS, and JavaScript with modern UI, clean design, and interactive functionality.
+          </p>
+
+          <div>
+            <span style={tagStyle}>HTML</span>
+            <span style={tagStyle}>CSS</span>
+            <span style={tagStyle}>JavaScript</span>
+          </div>
+
+          <div style={{ marginTop: "15px" }}>
+            <a
+              href="https://github.com/Abhijith1729/modern-calculator-js"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button style={buttonStyle}>
+                View Code
+              </button>
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+  )
+}
+
+
+/* Card Style */
+const cardStyle = {
+  backgroundColor: "#1e293b",
+  padding: "20px",
+  borderRadius: "10px",
+  boxShadow: "0 0 10px rgba(0,0,0,0.3)"
+}
+
+
+/* Description Style */
+const descStyle = {
+  marginTop: "10px",
+  color: "#cbd5e1",
+  lineHeight: "1.5"
+}
+
+
+/* Tag Style */
+const tagStyle = {
+  display: "inline-block",
+  backgroundColor: "#334155",
+  padding: "5px 10px",
+  borderRadius: "6px",
+  marginRight: "8px",
+  marginTop: "5px",
+  fontSize: "12px"
+}
+
+
+/* Button Style */
+const buttonStyle = {
+  padding: "8px 15px",
+  backgroundColor: "#2563eb",
+  color: "white",
+  border: "none",
+  borderRadius: "6px",
+  cursor: "pointer"
+}
+
+
+export default Projects;
