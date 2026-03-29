@@ -1,61 +1,69 @@
-function Hero() {
-  return (
-    <section className="container" style={{ textAlign: "center" }}>
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
-      <h1 style={{ fontSize: "48px", fontWeight: "bold" }}>
-        Hi, I'm Abhijith Vyshnava
+function Hero(){
+
+  return(
+
+    <section className="hero container">
+
+      <h1>
+        Vyshnava Abhijith
       </h1>
 
-      <h2 style={{ marginTop: "10px", color: "#cbd5e1" }}>
-        Aspiring Software Developer
+      <h2>
+        Software Engineer building scalable web apps
       </h2>
 
-      <p style={{ marginTop: "15px", color: "#94a3b8" }}>
-        I build web applications and software solutions using modern technologies.
+      <p>
+        Passionate about building scalable systems and solving real problems with code.
       </p>
 
-      <div style={{ marginTop: "25px" }}>
+      <div className="hero-buttons">
 
-        {/* GitHub Button */}
         <a
           href="https://github.com/Abhijith1729"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button
-            style={{
-              padding: "10px 20px",
-              marginRight: "15px",
-              cursor: "pointer",
-              backgroundColor: "#2563eb",
-              color: "white",
-              border: "none",
-              borderRadius: "6px"
-            }}
-          >
+          <button className="btn btn-primary">
+
+            <FaGithub style={{marginRight:"6px"}} />
+
             GitHub
+
           </button>
         </a>
 
-        {/* Resume Download Button */}
-        <a href="/pwc_abhijith(1).pdf" download>
-          <button
-            style={{
-              padding: "10px 20px",
-              cursor: "pointer",
-              backgroundColor: "#16a34a",
-              color: "white",
-              border: "none",
-              borderRadius: "6px"
-            }}
-          >
-            Download Resume
+
+        <a
+          href="https://www.linkedin.com/in/abhijith-vyshnava-03b49b25a"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn btn-outline">
+
+            <FaLinkedin style={{marginRight:"6px"}} />
+
+            LinkedIn
+
           </button>
+        </a>
+
+
+        <a href="/pwc_abhijith(1).pdf" download>
+
+          <button className="btn btn-secondary">
+
+            Download Resume
+
+          </button>
+
         </a>
 
       </div>
 
     </section>
+
   )
 }
 

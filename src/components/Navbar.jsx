@@ -1,56 +1,39 @@
-function Navbar() {
-  return (
-    <nav style={{
-      backgroundColor: "#020617",
-      padding: "15px 40px",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      position: "sticky",
-      top: "0",
-      zIndex: "1000"
-    }}>
+function Navbar(){
+  return(
 
-      {/* Logo */}
-      <h2 style={{
-        color: "white",
-        fontWeight: "bold",
-        userSelect: "none"
-      }}>
-        Portfolio
-      </h2>
+    <nav className="navbar">
 
-      {/* Navigation Links */}
-      <div>
+      <div className="nav-container">
 
-        <a href="#about" style={linkStyle}>
-          About
-        </a>
+        <div className="logo">
+          Vyshnava Abhijith
+        </div>
 
-        <a href="#skills" style={linkStyle}>
-          Skills
-        </a>
+        <div className="nav-links">
 
-        <a href="#projects" style={linkStyle}>
-          Projects
-        </a>
+          <a href="#about">
+            About
+          </a>
 
-        <a href="#contact" style={linkStyle}>
-          Contact
-        </a>
+          <a href="#skills">
+            Skills
+          </a>
+
+          <a href="#projects">
+            Projects
+          </a>
+
+          <a href="#contact">
+            Contact
+          </a>
+
+        </div>
 
       </div>
 
     </nav>
-  )
-}
 
-const linkStyle = {
-  color: "white",
-  marginLeft: "25px",
-  textDecoration: "none",
-  cursor: "pointer",
-  fontSize: "16px"
+  )
 }
 
 export default Navbar
