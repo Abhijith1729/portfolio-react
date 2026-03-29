@@ -39,7 +39,7 @@ className="btn btn-outline"
 </a>
 
 <a
-href="/abhijith_resume_.pdf"
+href={`${import.meta.env.BASE_URL}resume.pdf`}
 target="_blank"
 className="btn btn-green"
 >
