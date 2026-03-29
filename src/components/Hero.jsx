@@ -39,9 +39,9 @@ className="btn btn-outline"
 </a>
 
 <a
-href="/pwc_abhijith(1).pdf"
+href="/abhijith_resume_.pdf"
+target="_blank"
 className="btn btn-green"
-download
 >
 Resume
 </a>
