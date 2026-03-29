@@ -1,28 +1,38 @@
-function Skills() {
-  return (
+function Skills(){
+
+  return(
+
     <section id="skills" className="container">
 
-      <h2>Skills</h2>
+      <h2 className="section-title">
+        Skills
+      </h2>
 
-      <ul style={{ marginTop: "15px", lineHeight: "28px" }}>
+      <div className="skills-grid">
 
-        <li>Python</li>
+        <div className="skill-card">
+          <h3>Languages</h3>
+          <p>JavaScript</p>
+          <p>Python</p>
+          <p>SQL</p>
+        </div>
 
-        <li>JavaScript</li>
+        <div className="skill-card">
+          <h3>Frameworks</h3>
+          <p>React</p>
+          <p>Node.js</p>
+        </div>
 
-        <li>HTML & CSS</li>
+        <div className="skill-card">
+          <h3>Tools</h3>
+          <p>Git</p>
+          <p>GitHub</p>
+        </div>
 
-        <li>React</li>
-
-        <li>SQL & DBMS</li>
-
-        <li>Object-Oriented Programming (OOPS)</li>
-
-        <li>Git & GitHub</li>
-
-      </ul>
+      </div>
 
     </section>
+
   )
 }
 

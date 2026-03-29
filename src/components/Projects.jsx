@@ -1,164 +1,109 @@
-function Projects() {
+import { motion } from "framer-motion"
 
-  return (
+function Projects(){
+
+  return(
 
     <section id="projects" className="container">
 
-      <h2 style={{fontSize:"32px", marginBottom:"20px"}}>
+      <h2 className="section-title">
         Projects
       </h2>
 
-
       <div className="projects-grid">
 
+        <motion.div
+          className="project-card"
+          whileHover={{ scale:1.05 }}
+        >
 
-        {/* Project 1 */}
-
-        <div className="project-card">
-
-          <h3>
-            AI Career Advisor
-          </h3>
+          <h3>AI Career Advisor</h3>
 
           <p>
-            Generative AI web app that recommends career roles and learning
-            roadmaps based on user skills using an LLM API.
+            Generative AI web app recommending career paths using LLM API.
           </p>
 
-
           <div className="project-tags">
-
-            <span className="project-tag">Python</span>
-            <span className="project-tag">Streamlit</span>
-            <span className="project-tag">LLM API</span>
-            <span className="project-tag">Deployment</span>
-
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>LLM API</span>
           </div>
-
 
           <div className="project-buttons">
 
-            <a
-              href="https://github.com/Abhijith1729/ai-career-advisor"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-
-              <button className="btn btn-primary">
-                View Code
-              </button>
-
+            <a href="https://github.com/Abhijith1729/ai-career-advisor" target="_blank">
+              <button className="btn btn-primary">Code</button>
             </a>
 
-
-            <a
-              href="https://ai-career-advisor-g3g6ua83aufmpo8mnzjmcn.streamlit.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-
-              <button className="btn btn-secondary">
-                Live Demo
-              </button>
-
+            <a href="https://ai-career-advisor-g3g6ua83aufmpo8mnzjmcn.streamlit.app" target="_blank">
+              <button className="btn btn-secondary">Live</button>
             </a>
 
           </div>
 
-        </div>
+        </motion.div>
 
 
-        {/* Project 2 */}
+        <motion.div
+          className="project-card"
+          whileHover={{ scale:1.05 }}
+        >
 
-        <div className="project-card">
-
-          <h3>
-            Cardiovascular Disease Prediction
-          </h3>
+          <h3>Cardiovascular Disease Prediction</h3>
 
           <p>
-            Machine learning application that predicts cardiovascular disease
-            using ensemble models with an interactive Streamlit interface.
+            ML model predicting cardiovascular risk using ensemble learning.
           </p>
 
-
           <div className="project-tags">
-
-            <span className="project-tag">Python</span>
-            <span className="project-tag">Machine Learning</span>
-            <span className="project-tag">Scikit-learn</span>
-            <span className="project-tag">Streamlit</span>
-
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Streamlit</span>
           </div>
-
 
           <div className="project-buttons">
 
-            <a
-              href="https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-
-              <button className="btn btn-primary">
-                View Code
-              </button>
-
+            <a href="https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques" target="_blank">
+              <button className="btn btn-primary">Code</button>
             </a>
 
           </div>
 
-        </div>
+        </motion.div>
 
 
-        {/* Project 3 */}
+        <motion.div
+          className="project-card"
+          whileHover={{ scale:1.05 }}
+        >
 
-        <div className="project-card">
-
-          <h3>
-            Modern Calculator
-          </h3>
+          <h3>Modern Calculator</h3>
 
           <p>
-            Responsive calculator built with JavaScript featuring clean UI
-            and real-time calculations.
+            Responsive calculator built with JavaScript.
           </p>
 
-
           <div className="project-tags">
-
-            <span className="project-tag">HTML</span>
-            <span className="project-tag">CSS</span>
-            <span className="project-tag">JavaScript</span>
-
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
           </div>
-
 
           <div className="project-buttons">
 
-            <a
-              href="https://github.com/Abhijith1729/modern-calculator-js"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-
-              <button className="btn btn-primary">
-                View Code
-              </button>
-
+            <a href="https://github.com/Abhijith1729/modern-calculator-js" target="_blank">
+              <button className="btn btn-primary">Code</button>
             </a>
 
           </div>
 
-        </div>
-
+        </motion.div>
 
       </div>
 
     </section>
 
   )
-
 }
 
 export default Projects

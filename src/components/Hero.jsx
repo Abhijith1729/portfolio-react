@@ -1,64 +1,81 @@
+import { motion } from "framer-motion"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 
-function Hero(){
+function Hero() {
 
-  return(
+  return (
 
     <section className="hero container">
 
-      <h1>
-        Vyshnava Abhijith
-      </h1>
+      <div className="hero-grid">
 
-      <h2>
-        Software Engineer building scalable web apps
-      </h2>
-
-      <p>
-        Passionate about building scalable systems and solving real problems with code.
-      </p>
-
-      <div className="hero-buttons">
-
-        <a
-          href="https://github.com/Abhijith1729"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
+          initial={{ opacity:0, y:40 }}
+          animate={{ opacity:1, y:0 }}
+          transition={{ duration:0.7 }}
         >
-          <button className="btn btn-primary">
 
-            <FaGithub style={{marginRight:"6px"}} />
+          <h1>
+            Vyshnava Abhijith
+          </h1>
 
-            GitHub
+          <h2>
+            Software Engineer building scalable web apps
+          </h2>
 
-          </button>
-        </a>
+          <p>
+            Passionate about building scalable systems and solving real problems with code.
+          </p>
+
+          <div className="hero-buttons">
+
+            <a href="https://github.com/Abhijith1729" target="_blank">
+
+              <button className="btn btn-primary">
+                <FaGithub /> GitHub
+              </button>
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/abhijith-vyshnava-03b49b25a" target="_blank">
+
+              <button className="btn btn-outline">
+                <FaLinkedin /> LinkedIn
+              </button>
+
+            </a>
+
+            <a href="/pwc_abhijith(1).pdf" download>
+
+              <button className="btn btn-secondary">
+                Resume
+              </button>
+
+            </a>
+
+          </div>
+
+        </motion.div>
 
 
-        <a
-          href="https://www.linkedin.com/in/abhijith-vyshnava-03b49b25a"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
+          className="hero-visual"
+          initial={{ opacity:0, x:40 }}
+          animate={{ opacity:1, x:0 }}
+          transition={{ duration:0.7 }}
         >
-          <button className="btn btn-outline">
 
-            <FaLinkedin style={{marginRight:"6px"}} />
+          <div className="code-box">
 
-            LinkedIn
+            <p>{`const developer = {`}</p>
+            <p> name: "Abhijith",</p>
+            <p> role: "Software Engineer",</p>
+            <p> skills: ["React","Node","Python"],</p>
+            <p>{`}`}</p>
 
-          </button>
-        </a>
+          </div>
 
-
-        <a href="/pwc_abhijith(1).pdf" download>
-
-          <button className="btn btn-secondary">
-
-            Download Resume
-
-          </button>
-
-        </a>
+        </motion.div>
 
       </div>
 
