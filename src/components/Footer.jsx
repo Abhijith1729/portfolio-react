@@ -1,13 +1,28 @@
 function Footer() {
   return (
-    <footer style={{
-      backgroundColor:"#020617",
-      textAlign:"center",
-      padding:"20px",
-      marginTop:"40px"
-    }}>
+    <footer className="footer">
 
-      © 2026 Abhijith
+      <p>© {new Date().getFullYear()} Vyshnava Abhijith</p>
+
+      <div className="footer-links">
+
+        <a
+          href="https://github.com/Abhijith1729"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/abhijith-vyshnava-03b49b25a"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+      </div>
 
     </footer>
   )

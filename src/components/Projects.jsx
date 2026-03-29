@@ -4,7 +4,7 @@ const projects = [
   {
     title: "AI Career Advisor",
     description:
-      "Generative AI web app recommending personalized career paths using LLM API and Streamlit.",
+      "AI-powered career advisor using LLM APIs to generate personalized career recommendations based on user skill profiles.",
     image:
       "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
     tags: ["Python", "Streamlit", "LLM API"],

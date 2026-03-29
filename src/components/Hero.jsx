@@ -13,7 +13,7 @@ Vyshnava <br/> Abhijith
 </h1>
 
 <h2>
-Software Engineer building scalable web apps
+Software developer focused on machine learning applications and modern web technologies.
 </h2>
 
 <p>
