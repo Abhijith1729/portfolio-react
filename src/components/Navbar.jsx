@@ -1,39 +1,30 @@
 function Navbar(){
-  return(
 
-    <nav className="navbar">
+return(
 
-      <div className="nav-container">
+<nav className="navbar">
 
-        <div className="logo">
-          Vyshnava Abhijith
-        </div>
+<div className="nav-inner">
 
-        <div className="nav-links">
+<div className="logo">
+Vyshnava Abhijith
+</div>
 
-          <a href="#about">
-            About
-          </a>
+<div className="nav-links">
 
-          <a href="#skills">
-            Skills
-          </a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
-          <a href="#projects">
-            Projects
-          </a>
+</div>
 
-          <a href="#contact">
-            Contact
-          </a>
+</div>
 
-        </div>
+</nav>
 
-      </div>
+)
 
-    </nav>
-
-  )
 }
 
 export default Navbar

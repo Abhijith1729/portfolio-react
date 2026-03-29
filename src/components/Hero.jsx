@@ -1,87 +1,78 @@
-import { motion } from "framer-motion"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 
-function Hero() {
+function Hero(){
 
-  return (
+return(
 
-    <section className="hero container">
+<section className="container hero">
 
-      <div className="hero-grid">
+<div className="hero-left">
 
-        <motion.div
-          initial={{ opacity:0, y:40 }}
-          animate={{ opacity:1, y:0 }}
-          transition={{ duration:0.7 }}
-        >
+<h1>
+Vyshnava <br/> Abhijith
+</h1>
 
-          <h1>
-            Vyshnava Abhijith
-          </h1>
+<h2>
+Software Engineer building scalable web apps
+</h2>
 
-          <h2>
-            Software Engineer building scalable web apps
-          </h2>
+<p>
+Passionate about building scalable systems and solving real problems with code.
+</p>
 
-          <p>
-            Passionate about building scalable systems and solving real problems with code.
-          </p>
+<div className="hero-buttons">
 
-          <div className="hero-buttons">
+<a
+href="https://github.com/Abhijith1729"
+target="_blank"
+className="btn btn-blue"
+>
+<FaGithub/> GitHub
+</a>
 
-            <a href="https://github.com/Abhijith1729" target="_blank">
+<a
+href="https://www.linkedin.com/in/abhijith-vyshnava-03b49b25a"
+target="_blank"
+className="btn btn-outline"
+>
+<FaLinkedin/> LinkedIn
+</a>
 
-              <button className="btn btn-primary">
-                <FaGithub /> GitHub
-              </button>
+<a
+href="/pwc_abhijith(1).pdf"
+className="btn btn-green"
+download
+>
+Resume
+</a>
 
-            </a>
+</div>
 
-            <a href="https://www.linkedin.com/in/abhijith-vyshnava-03b49b25a" target="_blank">
+</div>
 
-              <button className="btn btn-outline">
-                <FaLinkedin /> LinkedIn
-              </button>
+<div className="hero-code">
 
-            </a>
+<pre>
+{`const developer = {
 
-            <a href="/pwc_abhijith(1).pdf" download>
+name: "Abhijith",
+role: "Software Engineer",
 
-              <button className="btn btn-secondary">
-                Resume
-              </button>
+skills: [
+"React",
+"Node",
+"Python"
+]
 
-            </a>
+}`}
+</pre>
 
-          </div>
+</div>
 
-        </motion.div>
+</section>
 
+)
 
-        <motion.div
-          className="hero-visual"
-          initial={{ opacity:0, x:40 }}
-          animate={{ opacity:1, x:0 }}
-          transition={{ duration:0.7 }}
-        >
-
-          <div className="code-box">
-
-            <p>{`const developer = {`}</p>
-            <p> name: "Abhijith",</p>
-            <p> role: "Software Engineer",</p>
-            <p> skills: ["React","Node","Python"],</p>
-            <p>{`}`}</p>
-
-          </div>
-
-        </motion.div>
-
-      </div>
-
-    </section>
-
-  )
 }
 
 export default Hero

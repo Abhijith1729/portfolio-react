@@ -1,108 +1,111 @@
 import { motion } from "framer-motion"
 
-function Projects(){
+const projects = [
+  {
+    title: "AI Career Advisor",
+    description:
+      "Generative AI web app recommending personalized career paths using LLM API and Streamlit.",
+    image:
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+    tags: ["Python", "Streamlit", "LLM API"],
+    code: "https://github.com/Abhijith1729/ai-career-advisor",
+    live: "https://ai-career-advisor-g3g6ua83aufmpo8mnzjmcn.streamlit.app"
+  },
 
-  return(
+  {
+    title: "Cardiovascular Disease Prediction",
+    description:
+      "Machine learning system predicting cardiovascular risk using ensemble learning techniques.",
+    image:
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+    tags: ["Python", "Scikit-learn", "Streamlit"],
+    code:
+      "https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques"
+  },
 
-    <section id="projects" className="container">
+  {
+    title: "Modern Calculator",
+    description:
+      "Fully responsive calculator built with modern JavaScript and clean UI design.",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    tags: ["HTML", "CSS", "JavaScript"],
+    code: "https://github.com/Abhijith1729/modern-calculator-js"
+  }
+]
 
-      <h2 className="section-title">
-        Projects
-      </h2>
+function Projects() {
+  return (
+    <section id="projects" className="projects-section">
 
-      <div className="projects-grid">
+      <div className="projects-container">
 
-        <motion.div
-          className="project-card"
-          whileHover={{ scale:1.05 }}
-        >
+        <h2 className="section-title">Projects</h2>
 
-          <h3>AI Career Advisor</h3>
+        <div className="projects-grid">
 
-          <p>
-            Generative AI web app recommending career paths using LLM API.
-          </p>
+          {projects.map((project, index) => (
 
-          <div className="project-tags">
-            <span>Python</span>
-            <span>Streamlit</span>
-            <span>LLM API</span>
-          </div>
+            <motion.div
+              key={index}
+              className="project-card"
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              viewport={{ once: true }}
+            >
 
-          <div className="project-buttons">
+              <div className="project-image-wrapper">
 
-            <a href="https://github.com/Abhijith1729/ai-career-advisor" target="_blank">
-              <button className="btn btn-primary">Code</button>
-            </a>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
 
-            <a href="https://ai-career-advisor-g3g6ua83aufmpo8mnzjmcn.streamlit.app" target="_blank">
-              <button className="btn btn-secondary">Live</button>
-            </a>
+              </div>
 
-          </div>
+              <div className="project-content">
 
-        </motion.div>
+                <h3>{project.title}</h3>
 
+                <p>{project.description}</p>
 
-        <motion.div
-          className="project-card"
-          whileHover={{ scale:1.05 }}
-        >
+                <div className="project-tags">
 
-          <h3>Cardiovascular Disease Prediction</h3>
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="tag">
+                      {tag}
+                    </span>
+                  ))}
 
-          <p>
-            ML model predicting cardiovascular risk using ensemble learning.
-          </p>
+                </div>
 
-          <div className="project-tags">
-            <span>Python</span>
-            <span>Scikit-learn</span>
-            <span>Streamlit</span>
-          </div>
+                <div className="project-buttons">
 
-          <div className="project-buttons">
+                  <a href={project.code} target="_blank" rel="noreferrer">
+                    <button className="btn btn-primary">Code</button>
+                  </a>
 
-            <a href="https://github.com/Abhijith1729/Cardiovascular-disease-prediction-using-ensemble-techniques" target="_blank">
-              <button className="btn btn-primary">Code</button>
-            </a>
+                  {project.live && (
+                    <a href={project.live} target="_blank" rel="noreferrer">
+                      <button className="btn btn-secondary">Live</button>
+                    </a>
+                  )}
 
-          </div>
+                </div>
 
-        </motion.div>
+              </div>
 
+            </motion.div>
 
-        <motion.div
-          className="project-card"
-          whileHover={{ scale:1.05 }}
-        >
+          ))}
 
-          <h3>Modern Calculator</h3>
-
-          <p>
-            Responsive calculator built with JavaScript.
-          </p>
-
-          <div className="project-tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-
-          <div className="project-buttons">
-
-            <a href="https://github.com/Abhijith1729/modern-calculator-js" target="_blank">
-              <button className="btn btn-primary">Code</button>
-            </a>
-
-          </div>
-
-        </motion.div>
+        </div>
 
       </div>
 
     </section>
-
   )
 }
 

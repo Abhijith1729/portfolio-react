@@ -1,43 +1,66 @@
 function About() {
-  return (
-    <section id="about" className="container">
 
-      <h2>About Me</h2>
+return (
 
-      <ul style={{ marginTop: "15px", lineHeight: "28px" }}>
+<section id="about" className="section">
 
-        <li>
-          Final year Computer Science Engineering student at Bangalore Institute of Technology.
-        </li>
+<div className="section-container">
 
-        <li>
-          Current CGPA: 7.5.
-        </li>
+<h2 className="section-title">
+About Me
+</h2>
 
-        <li>
-          Specialization in IoT, Cybersecurity, and Blockchain Technology.
-        </li>
+<div className="about-grid">
 
-        <li>
-          Preparing for Software Developer roles focused on database and data-driven applications.
-        </li>
+<div className="about-text">
 
-        <li>
-          Strong fundamentals in DBMS, Object-Oriented Programming (OOPS), and Python.
-        </li>
+<p>
+Final year Computer Science Engineering student at Bangalore Institute of Technology with strong interest in backend systems and data-driven applications.
+</p>
 
-        <li>
-          Proficient in writing SQL queries, database design, and data handling.
-        </li>
+<p>
+Currently focused on building scalable software and strengthening my skills in databases, distributed systems and modern web technologies.
+</p>
 
-        <li>
-          Interested in building scalable software systems and solving real-world problems.
-        </li>
+</div>
 
-      </ul>
 
-    </section>
-  )
+<div className="about-highlights">
+
+<ul>
+
+<li>
+Final year CSE student — Bangalore Institute of Technology
+</li>
+
+<li>
+CGPA: 7.5
+</li>
+
+<li>
+Specialization: IoT, Cybersecurity, Blockchain
+</li>
+
+<li>
+Strong foundation in DBMS, OOPS, Python
+</li>
+
+<li>
+Experience with SQL and data-driven applications
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+)
+
 }
 
 export default About
