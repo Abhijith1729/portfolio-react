@@ -39,3 +39,13 @@ npm run build
 ## Deployment
 
 Deployed using GitHub Pages.
+## Preview
+
+### Home
+![Home](public/screenshots/home.png)
+
+### Projects
+![Projects](public/screenshots/projects.png)
+
+### Contact
+![Contact](public/screenshots/contact.png)
